@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tan</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="form_wrap">
+    <h1>石墨文档</h1>
+    <form action="/user/regist" method="post" id="form">
+        <input placeholder="username" class="input_filed" id="username" type="text" name="username" required><br>
+        <input placeholder="userpassword" class="input_filed" id="userpwd" type="password" name="userpwd" required><br>
+        <input placeholder="confirmpassword" class="input_filed" id="confirmpwd" type="password" required><br>
+
+        <p class="hint"><%= res %></p>
+
+        <input class="input_filed" id="regist" type="button" value="注册"><br>
+    </form>
+    <a href="login.html">登录</a>&nbsp;
+    <a href="../index.html">首页</a>
+</div>
+
+<script>
+    var form = document.getElementById('form');
+    var registBtn = document.getElementById("regist");
+
+    registBtn.onclick = function () {
+        var userpwd = document.getElementById("userpwd").value;
+        var confirmpwd = document.getElementById("confirmpwd").value;
+        if (userpwd !== confirmpwd) {
+            alert('两次密码不一样');
+        } else {
+            form.submit();
+        }
+    }
+</script>
+
+</body>
+</html>

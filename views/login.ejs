@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tan</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="form_wrap">
+    <h1>石墨文档</h1>
+    <form action="/user/login" method="post">
+        <input placeholder="username" class="input_filed" id="username" type="text" name="username" required><br>
+        <input placeholder="userpassword" class="input_filed" id="userpwd" type="password" name="userpwd" required><br>
+
+        <p class="hint"><%= res %></p>
+
+        <input class="input_filed" id="login" type="submit" value="登录"><br>
+    </form>
+    <a href="/regist.html">注册</a>&nbsp;
+    <a href="/">首页</a>
+
+</div>
+</body>
+</html>

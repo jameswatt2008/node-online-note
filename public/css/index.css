@@ -1,0 +1,244 @@
+body {
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    min-width: 1200px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 77777;
+}
+
+/*logo*/
+.logo {
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.logo a {
+    height: 60px;
+    display: block;
+    width: 140px;
+    background: url("../img/logo.png") no-repeat center;
+}
+
+.nav_menu {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+/*导航li*/
+.nav_menu li, .nav_right li {
+    float: left;
+}
+
+/*导航a*/
+.nav_menu li a {
+    padding: 0 20px;
+    display: block;
+    color: #b5b8bb;
+    height: 60px;
+    line-height: 60px;
+}
+
+/*右侧按钮*/
+.nav_right {
+    float: right;
+    padding: 0 25px;
+}
+
+.nav_right li a {
+    display: inline-block;
+    margin-top: 15px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#nav_login {
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    color: #c6c7c9;
+}
+
+#nav_regist {
+    width: 100px;
+    background-color: #6DA0E3;
+    margin-right: 10px;
+    color: #fff;
+}
+
+/*大图区域*/
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url("../img/lujing2.jpg") center center no-repeat;
+    background-size: cover;
+    min-width: 1200px;
+}
+
+/*内容区*/
+.main {
+    min-width: 1200px;
+    min-height: 760px;
+}
+
+.main_wrap {
+    background-color: #F7F7F7;
+    width: 1040px;
+    height: 560px;
+    top: 150px;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -520px;
+    box-shadow: 0px 8px 16px rgba(7, 17, 27, .2);
+}
+
+.main_title {
+    height: 50px;
+    background-color: #e5e5e6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 50px;
+    color: #373737;
+}
+
+.main_left, .main_right {
+    height: 510px;
+    width: 520px;
+    float: left;
+}
+
+.main_left {
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.main_right {
+    position: relative;
+}
+
+#add {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 0;
+    color: #373737;
+    left: 50%;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+#notebody {
+    line-height: 2;
+    font-size: 16px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 520px;
+    height: 510px;
+    background-color: #E9E7AB;
+    text-indent: 2em;
+    outline: none;
+    border: none;
+}
+
+.note_item {
+    padding: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #141414;
+}
+
+.note_item a, .note_item span {
+    color: #787878;
+}
+
+.note_body {
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*footer部分*/
+.footer {
+    background-color: #2c3033;
+    color: #fff;
+    padding: 27px 0;
+    font-size: 12px;
+}
+
+.footer_wrap {
+    height: 44px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.footer_left p {
+    margin-top: 7px;
+    color: #787d82;
+}
+
+.footer_left {
+    float: left;
+}
+
+.footer_right {
+    float: right;
+}
+
+.footer_nav, .footer_right {
+    overflow: hidden;
+}
+
+.footer_nav li {
+    float: left;
+    margin-right: 30px;
+}
+
+.footer_nav li a {
+    color: #c8cdd2;
+}
+
+.footer_nav li a:hover {
+    color: #fff;
+}
+
+/*底部右侧图标*/
+.footer_right a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/footer-sprite.png");
+    float: left;
+    margin: 0 10px;
+    opacity: .5;
+}
+
+.footer_weixin {
+    background-position: 0px -279px;
+}
+
+.footer_weibo {
+    background-position: 0px -321px;
+}
+
+.footer_qq {
+    background-position: 0px -363px;
+}
+
+.footer_right a:hover {
+    opacity: 1;
+}

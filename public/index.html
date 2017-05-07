@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tan</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery-1.12.4.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+<!--导航-->
+<header class="nav">
+    <div class="logo">
+        <a href="#"></a>
+    </div>
+
+    <ul class="nav_menu">
+        <li><a href="#">功能</a></li>
+        <li><a href="#">定价</a></li>
+        <li><a href="#">下载</a></li>
+        <li><a href="#">解决方案</a></li>
+        <li><a href="#">钉钉</a></li>
+        <li><a href="#">更多</a></li>
+    </ul>
+
+    <ul class="nav_right">
+        <li><a href="/login.html" id="nav_login">登录</a></li>
+        <li><a href="/regist.html" id="nav_regist">免费注册</a></li>
+    </ul>
+</header>
+
+<!--主体-->
+<div class="main">
+    <div class="banner"></div>
+    <div class="main_wrap">
+        <div class="main_title">在线便签（请登陆使用）</div>
+        <div class="main_left">
+        </div>
+        <div class="main_right">
+            <form action="/note/add" method="post">
+                <textarea name="notebody" placeholder="便签内容" id="notebody" required></textarea>
+                <input type="submit" id="add" value="" style="background:url('/img/add.png');">
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<footer class="footer">
+    <div class="footer_wrap">
+        <div class="footer_left">
+            <ul class="footer_nav">
+                <li><a href="#">解决方案</a></li>
+                <li><a href="#">公益计划</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">更新日志</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">服务条款</a></li>
+            </ul>
+            <p>鄂ICP备14013665号-2 © 2014-2017 </p>
+        </div>
+        <div class="footer_right">
+            <a href="javascript:;" class="footer_weixin"></a>
+            <a href="javascript:;" class="footer_weibo"></a>
+            <a href="javascript:;" class="footer_qq"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
